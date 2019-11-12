@@ -22,7 +22,7 @@
             '<i class="am-icon-folder"> <a class="articleCategoryColor" href="/categories?category=' + data.articleCategories + '">' + data.articleCategories + '</a></i>' +
             '</div>' +
             '</div></article-top><div class="article-i-say">' +
-            '多年以后，愿你的城市，有清风，有烈酒，也有人是你的归途。<span class="article-i-say-me">--- 张海洋</span>' +
+            '千里独行路朝朝，我要去寻找那失落的一角！<span class="article-i-say-me">--- LinKing</span>' +
             '</div>');
         $('.zhy-article-top').append(articleTop);
         $("#mdText").text(data.articleContent);
