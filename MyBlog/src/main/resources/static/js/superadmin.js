@@ -415,27 +415,29 @@
         });
     }
     //获取统计信息
-    function getStatisticsInfo() {
-        $.ajax({
-            type:'get',
-            url:'/getStatisticsInfo',
-            dataType:'json',
-            data:{
-            },
-            success:function (data) {
-                $('.allVisitor').html(data['allVisitor']);
-                $('.yesterdayVisitor').html(data['yesterdayVisitor']);
-                $('.allUser').html(data['allUser']);
-                $('.articleNum').html(data['articleNum']);
-                if(data['articleThumbsUpNum'] != 0){
-                    $('.articleThumbsUp').find('a').append($('<span class="am-badge am-badge-warning am-margin-right am-fr articleThumbsUpNum">' + data['articleThumbsUpNum'] + '</span>'));
-                }
-            },
-            error:function () {
-                alert("获取统计信息失败");
-            }
-        });
-    }
+    // function getStatisticsInfo() {
+    //     $.ajax({
+    //         type:'get',
+    //         url:'/getStatisticsInfo',
+    //         dataType:'json',
+    //         data:{
+    //         },
+    //         success:function (data) {
+    //             $('.allVisitor').html(data['allVisitor']);
+    //             $('.yesterdayVisitor').html(data['yesterdayVisitor']);
+    //             $('.allUser').html(data['allUser']);
+    //             $('.articleNum').html(data['articleNum']);
+    //             if(data['articleThumbsUpNum'] != 0){
+    //                 $('.articleThumbsUp').find('a').append($('<span class="am-badge am-badge-warning am-margin-right am-fr articleThumbsUpNum">' + data['articleThumbsUpNum'] + '</span>'));
+    //             }
+    //         },
+    //         error:function () {
+    //             alert("获取统计信息失败");
+    //         }
+    //     });
+    // }
+
+
     //获得文章管理文章
     function getArticleManagement(currentPage) {
         $.ajax({
