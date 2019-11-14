@@ -297,8 +297,8 @@
 
     //点击扫描二维码时获取二维码图片
     $('.myCardBtn').click(function () {
-        $('.qq_code').attr("src","static/img/qq_code.jpg");
-        $('.weixin_code').attr("src","static/img/weixin_code.png");
+        $('.qq_code').attr("src","img/qq_code.jpg");
+        $('.weixin_code').attr("src","img/weixin_code.png");
     });
 
     ajaxFirst(1);

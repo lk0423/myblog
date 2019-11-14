@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>碧水南天 | 写文章</title>
 
-    <link rel="icon" type="image/x-icon" href="static/img/lk.jpg">
+    <link rel="icon" type="image/x-icon" href="img/lk.jpg">
     <link href="https://lib.baomitu.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/editormd/editormd.min.css"/>
     <link rel="stylesheet" href="css/all.css">
@@ -28,7 +28,7 @@
         <div class="header">
             <div class="am-topbar" style="margin-bottom: 0">
                 <h1 class="am-topbar-brand">
-                    <a href="/" class="blogTitleName"><img src="static/img/lk.jpg" class="imgStyle">碧水南天</a>
+                    <a href="/" class="blogTitleName"><img src="img/lk.jpg" class="imgStyle">碧水南天</a>
                 </h1>
 
                 <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse" style="text-align: center">
@@ -45,9 +45,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
-                        <a href="/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">注册</a>
-                    </div>
+
                     <div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
                         <a href="/login" class="loginBtn am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">登录</a>
                     </div>
