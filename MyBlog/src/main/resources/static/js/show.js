@@ -38,14 +38,14 @@
         var articleFooter = $('<div class="end-logo">' +
             '<i class="am-icon-btn am-success am-icon-lg">完</i>' +
             '</div>' +
-            '<div class="show-weixin">' +
-            '<p><i class="weiXinQuoteLeft am-icon-quote-left "></i></p><br>' +
-            '<p class="show-weixin-pic">' +
-            '<img src="static/img/weixin.jpg">' +
-            '</p>' +
-            '<p class="show-weixin-pic">欢迎关注我的微信号：lk3431780376</p>' +
-            '<p><i class="weiXinQuoteRight am-icon-quote-right "></i></p>' +
-            '</div>' +
+            // '<div class="show-weixin">' +
+            // '<p><i class="weiXinQuoteLeft am-icon-quote-left "></i></p><br>' +
+            // '<p class="show-weixin-pic">' +
+            // '<img src="static/img/weixin.jpg">' +
+            // '</p>' +
+            // '<p class="show-weixin-pic">欢迎关注我的微信号：lk3431780376</p>' +
+            // '<p><i class="weiXinQuoteRight am-icon-quote-right "></i></p>' +
+            // '</div>' +
             '<div>' +
             '<ul class="post-copyright">' +
             '<li><strong>本文作者：</strong><span id="authorFooter">' + data.originalAuthor + '</span></li>' +
@@ -85,26 +85,26 @@
             var articleNext500 = $('<a  class="lastAndNext">' + data.nextInfo + '</a>' + '&nbsp;&nbsp;<i class="am-icon-angle-right am-icon-sm"></i>');
             $('.article-next').append(articleNext500);
         }
-        var likeBtn = $('<div class="likeBtn am-btn am-btn-danger">' +
-            '<div class="likeHeart">' +
-            '<i class="am-icon-heart-o">&nbsp;&nbsp;喜欢</i>' +
-            '</div>' +
-            '<div class="likesNum">' +
-            '<span> ' + data.likes + '</span>' +
-            '</div>' +
-            '</div>');
-        $('.other').append(likeBtn);
-        if(data.isLiked == 1){
-            $('.likeBtn').css({
-                "background-color": "#EA6F5A",
-                "color":"white"
-            });
-            $('.likesNum').css({
-                "border-left": "1px solid white"
-            });
-            $('.likeHeart').find('i').removeClass("am-icon-heart-o");
-            $('.likeHeart').find('i').addClass("am-icon-heart");
-        }
+        // var likeBtn = $('<div class="likeBtn am-btn am-btn-danger">' +
+        //     '<div class="likeHeart">' +
+        //     '<i class="am-icon-heart-o">&nbsp;&nbsp;喜欢</i>' +
+        //     '</div>' +
+        //     '<div class="likesNum">' +
+        //     '<span> ' + data.likes + '</span>' +
+        //     '</div>' +
+        //     '</div>');
+        // $('.other').append(likeBtn);
+        // if(data.isLiked == 1){
+        //     $('.likeBtn').css({
+        //         "background-color": "#EA6F5A",
+        //         "color":"white"
+        //     });
+        //     $('.likesNum').css({
+        //         "border-left": "1px solid white"
+        //     });
+        //     $('.likeHeart').find('i').removeClass("am-icon-heart-o");
+        //     $('.likeHeart').find('i').addClass("am-icon-heart");
+        // }
         $('.other').append($('<div class="social-share" data-initialized="true" data-url="https://www.zhyocean.cn/article/' + data.articleId  + '"  data-title="' + data.articleTitle + '">' +
             '<a href="#" class="social-share-icon icon-qq" data-am-popover="{content: \'分享至QQ好友\', trigger: \'hover focus\'}"></a>' +
             '<a href="#" class="social-share-icon icon-qzone" data-am-popover="{content: \'分享至QQ空间\', trigger: \'hover focus\'}"></a>' +
@@ -559,51 +559,51 @@
         });
     })(jQuery);
 
-    //点赞喜欢效果
-    function niceIn(prop) {
-        prop.find('i').addClass('niceIn');
-        setTimeout(function () {
-            prop.find('i').removeClass('niceIn');
-        }, 1000);
-    }
+    // //点赞喜欢效果
+    // function niceIn(prop) {
+    //     prop.find('i').addClass('niceIn');
+    //     setTimeout(function () {
+    //         prop.find('i').removeClass('niceIn');
+    //     }, 1000);
+    // }
 
 
-    //喜欢按钮
-    $(".likeBtn").click(function () {
-        var $this = $(this);
-        $.ajax({
-            type:'get',
-            url:'/addArticleLike',
-            dataType:'json',
-            data:{
-                articleId : articleId
-            },
-            success:function (data) {
-                if(data == -1){
-                    $.get("/toLogin",function(data,status,xhr){
-                        window.location.replace("/login");
-                    });
-                } else if(data == -2){
-                } else {
-                    $('.likesNum').find('span').html(data);
-                    $('.likeBtn').css({
-                        "background-color": "#EA6F5A",
-                        "color":"white"
-                    });
-                    $('.likesNum').css({
-                        "border-left": "1px solid white"
-                    });
-                    $('.likeHeart').find('i').removeClass("am-icon-heart-o");
-                    $('.likeHeart').find('i').addClass("am-icon-heart");
-                    $.tipsBox({
-                        obj: $this,
-                        str: "+1个喜欢"
-                    });
-                    niceIn($this);
-                }
-            },
-            error:function () {
-                alert("点赞失败！")
-            }
-        });
-    });
+    // //喜欢按钮
+    // $(".likeBtn").click(function () {
+    //     var $this = $(this);
+    //     $.ajax({
+    //         type:'get',
+    //         url:'/addArticleLike',
+    //         dataType:'json',
+    //         data:{
+    //             articleId : articleId
+    //         },
+    //         success:function (data) {
+    //             if(data == -1){
+    //                 $.get("/toLogin",function(data,status,xhr){
+    //                     window.location.replace("/login");
+    //                 });
+    //             } else if(data == -2){
+    //             } else {
+    //                 $('.likesNum').find('span').html(data);
+    //                 $('.likeBtn').css({
+    //                     "background-color": "#EA6F5A",
+    //                     "color":"white"
+    //                 });
+    //                 $('.likesNum').css({
+    //                     "border-left": "1px solid white"
+    //                 });
+    //                 $('.likeHeart').find('i').removeClass("am-icon-heart-o");
+    //                 $('.likeHeart').find('i').addClass("am-icon-heart");
+    //                 $.tipsBox({
+    //                     obj: $this,
+    //                     str: "+1个喜欢"
+    //                 });
+    //                 niceIn($this);
+    //             }
+    //         },
+    //         error:function () {
+    //             alert("点赞失败！")
+    //         }
+    //     });
+    // });

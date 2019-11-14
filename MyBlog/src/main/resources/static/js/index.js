@@ -1,9 +1,9 @@
 
     //网站最后更新时间（版本更新需更改）
-    var siteLastUpdateTime = '2019年05月23日13点';
+    var siteLastUpdateTime = '2019年11月15日00点';
 
     //网站开始时间
-    var siteBeginRunningTime = '2018-07-25 20:00:00';
+    var siteBeginRunningTime = '2019-11-15 00:00:00';
 
     // 广告上下滚动
     function getStyle(obj,name){
@@ -350,12 +350,6 @@
                 '</li>');
             siteDefault.append('<li>' +
                 '<i class="am-icon-tags site-default-icon"></i><span class="site-default-word">标签总数</span>：' + data['tagsNum'] + ' 个' +
-                '</li>');
-            siteDefault.append('<li>' +
-                '<i class="am-icon-comments-o site-default-icon"></i><span class="site-default-word">留言总数</span>：' + data['leaveWordNum'] + ' 条' +
-                '</li>');
-            siteDefault.append('<li>' +
-                '<i class="am-icon-commenting-o site-default-icon"></i><span class="site-default-word">评论总数</span>：' + data['commentNum'] + ' 条' +
                 '</li>');
             siteDefault.append('<li>' +
                 '<i class="am-icon-pencil-square site-default-icon"></i><span class="site-default-word">网站最后更新</span>：<span class="siteUpdateTime">' + siteLastUpdateTime + '</span>' +
