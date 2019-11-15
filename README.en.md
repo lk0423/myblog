@@ -1,36 +1,16 @@
-# myblog
+#Myblog
 
-#### Description
-springboot搭建的博客
+####The introduction of the Chinese people
+-The blog built by springboot includes the front end and the back end.
+-The main code comes from a big guy, and I just modified it as a study
 
-#### Software Architecture
-Software architecture description
+####Main technologies
+-Spring boot is used as the back-end framework, 
+the front and back ends are not separated, and the front end uses thmeleaf template
 
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+####Installation and use instructions
+1. Clone or download items to local
+2. Set up the database myblog. The database files are in the project 
+(please change the database password in the properties file to your local database password)
+3. Start the project and open 127.0.0.1 in the browser to see the effect.
+ Log in the background account 17364527412 and password 123456
