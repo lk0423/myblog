@@ -650,7 +650,7 @@
                     '目前友链数：' +
                     '<span class="friendLinkNum">' + data.length + '</span>' +
                     '<div class="updateFriendLink">' +
-                    '<a class="addFriendLink"><i class="am-icon-plus-square"></i> 添加友链</a>' +
+                    '<a class="addFriendLink"><i class="am-icon-plus-square"></i> 添加链接</a>' +
                     '</div>' +
                     '</div>'));
                 var table = $('<table class="am-table am-table-bd am-table-striped admin-content-table  am-animation-slide-right" style="margin-top: 15px"></table>');
